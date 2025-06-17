@@ -10,12 +10,12 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
   const errorEl = document.getElementById('formError');
   errorEl.textContent = '';
 
-  const loginRegex = /^[a-z0-9@.-]+$/; // только разрешённые символы
+  const loginRegex = /^[a-z0-9@.-]+$/; // only allowed characters
   const hasUpperCase = /[A-Z]/.test(login);
   const hasSpaces = /\s/.test(login);
 
   if (!login.includes('@')) {
-    errorEl.textContent = 'Login must be a valid email.';
+    errorEl.textContent = 'Login must contain @.';
     return;
   }
   if (login.length > 10) {
@@ -48,7 +48,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     return;
   }
 
-  // Если все условия выполнены
+  // Success
   document.getElementById('modal').classList.remove('hidden');
   e.target.reset();
 });
