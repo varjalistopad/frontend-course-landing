@@ -10,7 +10,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
   const errorEl = document.getElementById('formError');
   errorEl.textContent = '';
 
-  const loginRegex = /^[a-z0-9@.-]+$/; // only allowed characters
+  const loginRegex = /^[a-z0-9@.-]+$/;
   const hasUpperCase = /[A-Z]/.test(login);
   const hasSpaces = /\s/.test(login);
 
@@ -48,7 +48,6 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     return;
   }
 
-  // Success
   document.getElementById('modal').classList.remove('hidden');
   e.target.reset();
 });
