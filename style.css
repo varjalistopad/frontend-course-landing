@@ -52,6 +52,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +75,7 @@ h2 {
 }
 
 .testimonials {
-  background-image: url("background.jpg"); /* вставь путь к нужной картинке */
+  background-image: url("https://i.ibb.co/Ng1tFPDG/cropped-Mizuco-Teknologi-Informasi-05.jpg"); 
   background-size: cover;
   background-position: center;
   position: relative;

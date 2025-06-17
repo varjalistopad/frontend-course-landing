@@ -30,11 +30,11 @@ document.getElementById('closeModal').addEventListener('click', function () {
   document.getElementById('modal').classList.add('hidden');
 });
 
-// Глазик 👁 для показа/скрытия пароля
+// Показать/скрыть пароль с иконкой-глазом
 const passwordInput = document.getElementById('password');
 const eyeIcon = document.createElement('span');
-eyeIcon.className = 'toggle-password';
 eyeIcon.innerHTML = '👁';
+eyeIcon.className = 'toggle-password';
 
 eyeIcon.addEventListener('click', function () {
   if (passwordInput.type === 'password') {
