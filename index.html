@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Course Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Frontend Course for Beginners</h1>
+      <p>Learn HTML, CSS and JavaScript in 2 months</p>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About the Course</h2>
+      <p>You will learn how to build websites, work with Git, responsive layouts, and basic JavaScript.</p>
+    </div>
+  </section>
+
+  <section class="program">
+    <div class="container">
+      <h2>Course Program</h2>
+      <ul>
+        <li>Weeks 1-2: HTML + CSS</li>
+        <li>Weeks 3-4: Flexbox, responsive design</li>
+        <li>Weeks 5-6: Basic JavaScript</li>
+        <li>Weeks 7-8: Mini-projects and portfolio</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="cards">
+        <div class="card">
+          <p>"Very clear and to the point. Thank you!"</p>
+          <strong>— Marina</strong>
+        </div>
+        <div class="card">
+          <p>"I built a website myself! Works great on my phone too :)"</p>
+          <strong>— Alexey</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <h2>Sign Up for the Course</h2>
+      <form id="signupForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Frontend School</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p>Thank you for registering!</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
