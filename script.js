@@ -30,7 +30,7 @@ document.getElementById('closeModal').addEventListener('click', function () {
   document.getElementById('modal').classList.add('hidden');
 });
 
-// 👁 Глаз для показа/скрытия пароля
+// Глазик 👁 для показа/скрытия пароля
 const passwordInput = document.getElementById('password');
 const eyeIcon = document.createElement('span');
 eyeIcon.className = 'toggle-password';

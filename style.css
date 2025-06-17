@@ -66,7 +66,7 @@ h2 {
 }
 
 .testimonials {
-  background-image: url("https://i.ibb.co/Ng1tFPDG/cropped-Mizuco-Teknologi-Informasi-05.jpg");
+  background-image: url("background.jpg"); /* вставь путь к нужной картинке */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -97,8 +97,8 @@ form {
 
 .password-wrapper input {
   width: 100%;
-  box-sizing: border-box;
   padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .toggle-password {
