@@ -68,14 +68,14 @@ li {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 45%;
 }
 
 .testimonials {
-  background-image: url("https://i.ibb.co/Ng1tFPDG/cropped-Mizuco-Teknologi-Informasi-05.jpg");
+  background-image: url("https://i.ibb.co/3d0S3Yv/cropped-Mizuco-Teknologi-Informasi-05.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -85,7 +85,7 @@ li {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7); /* уменьшена прозрачность */
   z-index: 0;
 }
 
