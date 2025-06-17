@@ -14,14 +14,8 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
   const hasUpperCase = /[A-Z]/.test(login);
   const hasSpaces = /\s/.test(login);
 
-  if (!login.includes('@')) {
-    errorEl.textContent = 'Login must contain @.';
-    return;
-  }
-  if (login.length > 10) {
-    errorEl.textContent = 'Login must not exceed 10 characters.';
-    return;
-  }
+  const isEmail = login.includes('@') && login.includes('.');
+
   if (hasUpperCase) {
     errorEl.textContent = 'Login must not contain uppercase letters.';
     return;
@@ -33,6 +27,21 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
   if (!loginRegex.test(login)) {
     errorEl.textContent = 'Login contains invalid characters.';
     return;
+  }
+
+  if (isEmail) {
+    // additional email format validation
+    const emailParts = login.split('@');
+    if (emailParts.length !== 2 || emailParts[0].length === 0 || emailParts[1].length < 3 || !emailParts[1].includes('.')) {
+      errorEl.textContent = 'Invalid email format.';
+      return;
+    }
+  } else {
+    // strict rules for usernames
+    if (login.length > 10) {
+      errorEl.textContent = 'Username must not exceed 10 characters.';
+      return;
+    }
   }
 
   if (password.length < 8) {
