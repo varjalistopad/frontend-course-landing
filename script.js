@@ -29,3 +29,21 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
 document.getElementById('closeModal').addEventListener('click', function () {
   document.getElementById('modal').classList.add('hidden');
 });
+
+// 👁 Глаз для показа/скрытия пароля
+const passwordInput = document.getElementById('password');
+const eyeIcon = document.createElement('span');
+eyeIcon.className = 'toggle-password';
+eyeIcon.innerHTML = '👁';
+
+eyeIcon.addEventListener('click', function () {
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    eyeIcon.innerHTML = '🙈';
+  } else {
+    passwordInput.type = 'password';
+    eyeIcon.innerHTML = '👁';
+  }
+});
+
+document.querySelector('.password-wrapper').appendChild(eyeIcon);

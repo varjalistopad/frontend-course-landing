@@ -36,8 +36,9 @@
     <div class="container">
       <h2>Sign Up for the Course</h2>
       <form id="signupForm">
-        <input type="text" name="login" id="login" placeholder="Login (email)" required>
-        <input type="password" name="password" id="password" placeholder="Password" required>
+        <div class="password-wrapper">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
         <button type="submit">Submit</button>
         <p id="formError" class="error-message"></p>
       </form>
